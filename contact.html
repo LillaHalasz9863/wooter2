@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/2bb3f1dfbb.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<title>Wooter</title>
+</head>
+
+<body>
+
+	<nav class="topnav" id="burger_menu">
+		<a href="index.html">Wooter</a>
+		<a href="about.html">About</a>
+		<a href="products.html">Products</a>
+		<a href="impact.html">Impact</a>
+		<a href="contact.html">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+		<i class="fab fa-envira fa-2x fa-flip-horizontal"></i>
+		</a>
+	</nav>
+	
+<section class="contact">
+	
+	<aside class="contact_details">
+	<p>Address: København</p> 
+	<p>E-mail:  wooter@gmail.com</p>
+	<p>Tel.: +4543219876</p>
+	</aside>
+	
+	
+	<article class="logos">
+	<img src="instagram_icon.png" alt="Instagram logo" style="width:25%">
+	<img src="youtube_icon.png" alt="Youtube logo" style="width:25%">
+	</article>
+	
+	
+	<aside class="map">
+	<img src="map.PNG" alt="A map that shows the distance of India and Denmark" style="width:100%">
+	</aside>
+	
+</section>
+	
+	
+<script>
+function burgerFunction() {
+  var x = document.getElementById("burger_menu");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

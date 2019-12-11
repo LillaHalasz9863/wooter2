@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/2bb3f1dfbb.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<title>Wooter</title>
+</head>
+
+<body class="home-body">
+
+	<nav class="topnav" id="burger_menu">
+		<a href="index.html">Wooter</a>
+		<a href="about.html">About</a>
+		<a href="products.html">Products</a>
+		<a href="impact.html">Impact</a>
+		<a href="contact.html">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+		<i class="fab fa-envira fa-2x fa-flip-horizontal"></i>
+		</a>
+	</nav>
+	
+	
+	
+<section class="home">
+	
+<article class="main_home">
+	<img src="HH.png" alt="The logo of Wooter" style="width:20%">
+	<h1 id="title">Wooter</h1>
+	<h2>Rethink, The way You drink</h2>
+</article>
+	
+<img class="home_img" src="black.png" alt="Black wooter bottle" style="width:60%">	
+	
+<article class="home_prod">
+	<p>Wooter is changing the mindset of today´s generation from "WE CAN" to "WE DO"
+	</p>
+	<a id="button_home" href="products.html">Buy now</a>
+</article>
+	
+</section>	
+
+
+	
+	
+	
+	
+<script>
+function burgerFunction() {
+  var x = document.getElementById("burger_menu");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

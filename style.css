@@ -1,0 +1,466 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*----This is the style for the homepage (cuz its different from the others) -----*/
+.home-body{
+  background-image: url('home.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  color: white;
+}
+.home-body .topnav a {
+	color:white;
+}
+/*----END of the home style------*/
+
+
+
+
+/*----- START Navigation bar style-----*/
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;	
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: rgba(37,53,33);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 25px 0px 25px 0px;
+  margin: 20px 0px 20px 0px;
+}
+
+.topnav a:hover {
+  background-color: rgba(37,53,33,0.8);
+  color: white;
+}
+.topnav .icon {
+  display: none;
+  margin-top: 8px;
+}
+/*-----END this is the end of the navigation style*/
+
+
+
+
+
+
+
+/*-----START of the grid system----*/
+.about_1 {
+	grid-area: about_1;
+}
+.about_2 {
+	grid-area: about_2;
+}
+.about_3 {
+	grid-area: about_3;
+}
+.aboutimg_1 {
+	grid-area: aboutimg_1;
+}
+.aboutimg_2 {
+	grid-area: aboutimg_2;
+}
+.aboutimg_3 {
+	grid-area: aboutimg_3;}
+
+
+.impactimg_1{
+	grid-area: impactimg_1;
+}
+.quote{
+	grid-area: quote;
+}
+.impact{
+	grid-area: impact;
+}
+.impacth_2{
+	grid-area: impacth_2;
+}
+.impact_2{
+	grid-area: impact_2;
+}
+.impactimg_2{
+	grid-area: impactimg_2;
+}
+
+
+.main_home{
+	grid-area: main_home;
+}
+.home_img{
+	grid-area: home_img;
+}
+.home_prod{
+	grid-area: home_prod;
+}
+
+
+.prodimg{
+	grid-area: prodimg;
+}
+.prodtext{
+	grid-area: prodtext;
+}
+.container{
+	grid-area: container;
+}
+.product_1{
+	grid-area: product_1;
+}
+.product_2{
+	grid-area: product_2;
+}
+.product_3{
+	grid-area: product_3;
+}
+#prodh{
+	grid-area: prodh;
+}
+.product_4{
+	grid-area: product_4;
+}
+.product_5{
+	grid-area: product_5;
+}
+.product_6{
+	grid-area: product_6;
+}
+.container_2{
+	grid-area: container_2;
+}
+.product_7{
+	grid-area: product_7
+}
+
+
+.contact{
+	grid-area:contact;
+}
+.contact_details{
+	grid-area:contact_details;
+}
+.logos{
+	grid-area:logos;
+}
+.map{
+	grid-area:map;
+}
+
+
+
+.home{
+	display: grid;
+	width: 70%;  
+	margin: auto;  
+	grid-template-areas:
+	  "main_home main_home"
+	  "home_img home_prod";
+	align-items: center;
+	justify-items: center;
+}
+.about {
+  display: grid;
+  width: 70%;  
+  margin: auto;  
+  grid-gap: 20px;
+  grid-template-areas:
+	  "about_1 aboutimg_1"
+	  "aboutimg_2 about_2"
+	  "about_3 aboutimg_3";
+	align-items: center;
+	justify-items: center;
+}
+.products{
+  display: grid;
+  width: 70%;  
+  margin-right: auto;
+margin-left: auto;
+  grid-gap: 20px;
+	grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+	  "prodimg prodimg prodtext"
+	  "container container container"
+	  "product_1 product_2 product_3"
+	  ". prodh ."
+	  "product_4 product_5 product_6"
+	  "container_2 container_2 container_2"
+	  ". product_7 .";
+	align-items: center;
+	justify-items: center;
+}
+.impact{
+    display: grid;
+	width: 70%;  
+	margin: auto;  
+	grid-gap: 20px;
+	grid-template-areas:
+	  "impactimg_1 quote"
+	  "impact impact"
+	  "impacth_2 ."
+	  "impact_2 impactimg_2";
+	align-items: center;
+	justify-items: center;
+	text-align: justify;
+}
+.contact{
+	display: grid;
+	width: 70%;  
+	margin: auto; 
+	padding-top:7%;
+	grid-template-areas:
+	  "contact_details logos map";
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+/*-----END of the grids-----*/
+
+
+
+
+
+
+
+/*----START styling-----*/
+.about article{
+	text-align: justify;
+}
+.quote {
+	font-size: 1.5em;
+}
+.impactimg_1, .impactimg_2{
+	border-radius: 20%;
+}
+.main_home{
+	width:100%;
+	background-color: rgba(37,53,33,0.80);
+	padding: 7%;
+	border-radius: 20%;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align:center;
+}
+.main_home #title{
+	font-size: 3.4em;
+}
+.home_img{
+background-color: rgba(37,53,33,0.80);
+border-radius: 20%;
+}
+.home_prod{
+	font-size: 20px;
+	background-color: rgba(37,53,33,0.80);
+	border-radius: 20%;
+	width:100%;
+	text-align: center;
+	padding:7%;
+}
+
+#button_home{
+	border-radius: 25px 0px 25px 0px;
+	background-color: #67682B;
+	padding:15px;
+	color: white;
+	text-decoration: none;
+}
+#button_home:hover{
+	background-color: #B7B956;
+	color: black;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #4C2D14;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .creme {
+  background-color: #F4EBEB;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #253521;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.button:hover{
+	background-color: #7AA56F;
+	color:black;
+}
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+}
+.container_2{
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+}
+.bottom{
+	position: absolute;
+	bottom: 5%;
+	left:5%;
+}
+.prodimg{
+	border-radius: 20%;
+}
+.prodtext{
+	font-size: 1.8em;
+	padding: 20%;
+}
+.columns {
+  width: 90%;
+  padding: 8px;
+}
+/*------END of styling------*/
+
+
+
+
+
+
+
+/*-----START The mobile version media query-----*/
+@media screen and (max-width: 650px) {
+.topnav {
+	display: block;
+	}
+.topnav a{
+	display: none;
+	margin: 0px;
+	}
+.topnav a.icon {
+	float:right;
+    display: block;
+	color:rgba(37,53,33,0.8);
+	}
+.home-body .topnav a.icon{
+		color:white;
+	}
+.topnav.responsive {
+	position: relative;
+	}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	}
+.topnav.responsive a {
+	float: none;
+    display: block;
+    text-align: center;
+	background-color: rgba(37,53,33,0.8);
+	color:white;
+	border-radius: 0px 0px 0px 0px;
+	margin-top: 0px;
+	}
+	
+/*-----START of the grid of the different pages-----*/
+	
+	
+	.home{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+	  "main_home"
+	  "home_img"
+	  "home_prod"
+	}
+.about {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+	  "about_1"
+	  "aboutimg_1"
+	  "about_2"
+	  "aboutimg_2"
+	  "about_3"
+	  "aboutimg_3";
+}
+.products{
+  display: grid;
+  width: 80%;  
+  margin-right: auto;
+	margin-left: auto;
+  grid-gap: 20px;
+	grid-template-columns: 80%;
+  grid-template-areas:
+	  "prodimg"
+	  "prodtext"
+	  "container"
+	  "product_1"
+	  "product_2"
+	  "product_3"
+	  " prodh "
+	  "product_4"
+	  "product_5"
+	  "product_6"
+	  "container_2"
+	  "product_7";
+	align-items: center;
+	justify-items: center;
+}	
+.impact{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	  "quote"
+	  "impactimg_1"
+	  "impact"
+	  "impacth_2"
+	  "impact_2"
+	  "impactimg_2"
+	}
+.contact{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+	  "contact_details"
+	  "logos"
+	  "map";
+	}
+}
